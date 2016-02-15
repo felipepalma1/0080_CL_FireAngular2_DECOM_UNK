@@ -1,0 +1,80 @@
+<h3>Publica tu fuego</h3>
+
+<form class="form-publicar" ng-submit="publicarTrabajo(trabajo)">
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Titulo</label>
+      <input ng-model="trabajo.titulo" input type="text" class="form-control" placeholder="Titulo del trabajo">
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Empresa</label>
+        <input ng-model="trabajo.empresa" type="text" class="form-control" placeholder="Nombre de la empresa">
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>Descripcion</label>
+        <textarea ng-model="trabajo.descripcion" class="form-control" rows="3" placeholder="Descripcion del trabajo"></textarea>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Categoria</label>
+
+        <select ng-model="trabajo.categoria" class="form-control">
+            <option value="Marketing-Ventas">Marketing-Ventas</option>
+            <option value="Administracion-Oficina">Administracion-Oficina</option>
+            <option value="Atencion-Cliente">Atencion-Cliente</option>
+            <option value="Informatica-Telecomunicaciones">Informatica-Telecomunicaciones</option>
+
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Ubicacion</label>
+
+        <select ng-model="trabajo.ubicacion" class="form-control">
+            <option value="Ubicacion-1">Ubicacion-1</option>
+            <option value="Ubicacion-2">Ubicacion-2</option>
+            <option value="Ubicacion-3">Ubicacion-3</option>
+            <option value="Ubicacion-4">Ubicacion-4</option>
+
+        </select>
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Jornada</label>
+
+        <select ng-model="trabajo.jornada" class="form-control">
+
+            <option value="Matutina">Matutina</option>
+            <option value="Vespertina">Vespertina</option>
+            <option value="Nocturna">Nocturna</option>
+            <option value="Completa">Completa</option>
+
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+          <label>Salary</label>
+          <input ng-model="trabajo.salario" input type="number" class="form-control" placeholder="Salario mensual">
+      </div>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn btn-danger">Publicar</button>
+
+</form>

@@ -1,0 +1,6 @@
+<h3>Busca tu fuego</h3>
+</br>
+
+<ul ng-repeat="t in trabajos" ng-href="#/editar/{{t.$id}}">
+  <li>{{t.titulo}} - {{t.descripcion}}: {{t.ubicacion}}</li>
+</ul>
